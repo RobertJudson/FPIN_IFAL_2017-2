@@ -1,39 +1,11 @@
-Wiki(po)Lítica – 2017/2 – FPIN
+Atividades e projeto FPIN IFAL 2017.2
 
-A Organização PnP (Povo no Poder) deseja fomentar a publicação de informações sobre candidatos aos cargos eletivos na eleição 2018 de forma que suas ideias e propostas sejam melhor conhecidas pela população, desta forma, espera-se que a população possa escolher melhor seus representantes.
+Para utilização do projeto extrair o conteúdo do repositório na pasta padrão do seu servidor apache (xampp, wamp, lamp, etc), rodar os módulos (serviços) apache e mysql, abrir o diretório http://localhost/fpin_ifal_2017-2 em uma página do seu navegador, um menu estará disposto para navegação entre as atividades e as versões do projeto.
 
-Neste sentido, a organização PnP levantou um conjunto de características ou necessidades para este projeto:
+Para acessar corretamente a versão 2 (V2) será necessário importar o banco de dados do projeto, para isso vá até o diretório http://localhost/phpmyadmin, crie uma nova base de dados chamada wikilitca, acesse a aba importar, selecione o arquivo 'wikilitica.sql' contido em 'FPIN_IFAL_2017-2\Projeto_fpin_2017-2_V2\banco_de_dados' e execute.
 
-VERSÃO 01
-
-·         Caso de Uso 01A: Gerenciar Cidades e Estados – CdU 01A
-
-o   Qualquer cidadão/eleitor, independente de estar cadastrado no sistema, poderá cadastrar ou atualizar os dados das cidades e estados.
-
-·         Caso de Uso 02A: Gerenciar Partidos – CdU 02A
-
-o   Qualquer cidadão/eleitor, independente de estar cadastrado no sistema, poderá cadastrar ou atualizar os dados sobre os partidos existentes.
-
-·         Caso de Uso 03: Acesso às informações – CdU 03
-
-o   As informações levantadas no projeto serão compartilhadas com todos os cidadãos/eleitores, independentes de eles se identificarem ou não (login).
-
-o   O projeto oferecerá facilidades para que as informações sobre os candidatos sejam facilmente acessadas.
-
-o   O cidadão/eleitor poderá realizar busca por nome do candidato, cidade ou estado.
-
-·         Caso de Uso 04A: Cadastro/Atualização de Perfil de Candidato – CdU 04A
-
-o   Qualquer cidadão/eleitor poderá contribuir com informações sobre os candidatos. Na VERSÃO 01, mesmo um eleitor que não se cadastrou no sistema pode cadastrar/atualizar os dados de um candidato.
-
-o   Sobre cada candidato deseja-se ter informações sobre seu perfil:
-
-§  nome, sexo, idade, partido atual, profissão e realizações em sua vida pública ou profissional
-
-§  Cargo eletivo que está concorrendo
-
-§  É importante que as informações históricas do perfil do candidato sejam acompanhadas de alguma fonte de informação que ratifica-as
-
-·         Caso de Uso 05: Cadastro de Usuários – CdU 05
-
-o   O sistema permitirá que o cidadão/eleitor realize seu próprio cadastro informando os seguintes dados: email, senha, CPF, nome, telefone, data nascimento, sexo, endereço, cidade e estado
+Grupo:
+- Robert Judson
+- Tiago de Lima
+- Stewart Evangelista
+- Welington Alves
