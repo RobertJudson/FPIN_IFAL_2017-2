@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include("conecta.php") ?>
 <html>
 
 <head>
@@ -9,16 +10,7 @@
 </head>
 
 <body>
-    <nav id="menu" class="menuIndex">
-        <a href="index.html"><img src="img/logo.png"></a>
-        <!-- fazer area de pesquisa -->
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="candidatos.html">Candidatos</a></li>
-            <li><a id="signupButton" onclick="modal('signup', 'flex')">Cadastrar</a></li>
-            <li><a id="loginButton" onclick="modal('login', 'flex')">Acessar</a></li>
-        </ul>
-    </nav>
+    <?php include("menu.php") ?>
     <section class="maxWidth contentCidade">
         <article class="sobre">
             <div>
@@ -193,68 +185,6 @@
             </ul>
         </nav>
     </section>
-
-    <!-- modal login e signup -->
-
-    <section id="login" class="modal">
-        <div id="box" class="box">
-            <span id="closeModal" onclick="modal('login', 'none')">X</span>
-            <h1>Acesse sua conta</h1>
-            <form class="loginForm" action="">
-                <input type="text" placeholder="Usuario" name="username" required/>
-                <input type="password" placeholder="Senha" name="password" required />
-                <button type="submit">Entrar</button>
-                <div><span>Novo? <a class="signup" onclick="">Cadastre-se</a></span><a class="forgot" href="#">Esqueci a senha!</a></div>
-            </form>
-        </div>
-    </section>
-
-    <section id="signup" class="modal">
-        <div id="box" class="box">
-            <span id="closeModal" onclick="modal('signup', 'none')">X</span>
-            <h1>Cadastrar nova conta</h1>
-            <form class="loginForm" action="">
-                <input type="email" placeholder="E-mail" name="email" required/>
-                <input type="text" placeholder="Usuario" name="newUsername" required/>
-                <input type="password" placeholder="Senha" name="newPassword" required />
-                <input type="password" placeholder="Confirme sua senha" name="newPassword" required />
-                <button type="submit">Cadastrar</button>
-                <div><span>Já possui conta? <a class="signup" onclick="">Clique aqui!</a></span></div>
-            </form>
-        </div>
-    </section>
-
-    <section id="candidato" class="modal">
-        <div id="box" class="box">
-            <span id="closeModal" onclick="modal('candidato', 'none')">X</span>
-            <h1>Cadastrar novo candidato</h1>
-            <form class="loginForm" action="cadastra_candidato.php" method="post">
-                <select name="cidades">
-                    <option value="cidade">Cidade</option>
-                    <option value="cidade">Cidade</option>
-                    <option value="cidade">Cidade</option>
-                    <option value="cidade">Cidade</option>
-                </select>
-                <input type="text" placeholder="Nome do candidato" name="candidato" required/>
-                <input type="text" placeholder="Sexo" name="sexo" required/>
-                <!-- Idade aparece de acordo com o calculo da data de nascimento -->
-                <input type="date" placeholder="Data de nascimento" name="nascimento" required/>
-                <input type="text" placeholder="Naturalidade" name="naturalidade" required/>
-                <input type="text" placeholder="Profissão" name="profissao" required/>
-                <input type="text" placeholder="Partido Atual" name="partido" required/>
-                <input type="text" placeholder="Número" name="numero" required/>
-                <input type="text" placeholder="Cargo a que concorre" name="cargo" required/>
-                <p>foto do candidato (anexo)</p>
-                <button type="submit">Cadastrar</button>
-            </form>
-        </div>
-    </section>
-
-    <script>
-        function modal(id, info) {
-            document.getElementById(id).style.display = info;
-        }
-    </script>
 
 </body>
 

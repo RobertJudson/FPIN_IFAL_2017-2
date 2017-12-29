@@ -140,14 +140,15 @@ section.contentIndex nav.estadosIndex h2 {
 }
 
 section.contentIndex nav.estadosIndex ul {
-    width: 350px;
+    width: 360px;
     margin: 30px 0 0;
 }
 
 section.contentIndex nav.estadosIndex ul li {
     color: #0003AD;
     font-size: 16px;
-    padding: 15px 30px;
+    width: 100px;
+    padding: 15px 20px 15px 0;
     float: left;
 }
 
@@ -251,15 +252,22 @@ section.contentCandidatos nav.estadosCandidatos h2 {
 }
 
 section.contentCandidatos nav.estadosCandidatos ul {
-    width: 350px;
+    width: 360px;
     margin: 30px 0 0;
 }
 
 section.contentCandidatos nav.estadosCandidatos ul li {
     color: #0003AD;
     font-size: 16px;
-    padding: 15px 30px;
+    width: 100px;
+    padding: 15px 20px 15px 0;
     float: left;
+    display: flex;
+    justify-content: center;
+}
+
+section.contentCandidatos nav.estadosCandidatos ul li a{
+    text-align: center;
 }
 
 
@@ -364,14 +372,15 @@ section.contentEstado nav.cidadesEstado h2 {
 }
 
 section.contentEstado nav.cidadesEstado ul {
-    width: 350px;
+    width: 360px;
     margin: 30px 0 0;
 }
 
 section.contentEstado nav.cidadesEstado ul li {
     color: #0003AD;
     font-size: 16px;
-    padding: 15px 30px;
+    width: 100px;
+    padding: 15px 20px 15px 0;
     float: left;
 }
 

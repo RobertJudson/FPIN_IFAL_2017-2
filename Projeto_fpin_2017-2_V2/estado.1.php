@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php include("conecta.php") ?>
+<?php $estado = $_GET['p'] ?>
 <html>
 
 <head>
@@ -9,21 +11,12 @@
 </head>
 
 <body>
-    <nav id="menu" class="menuIndex">
-        <a href="index.html"><img src="img/logo.png"></a>
-        <!-- fazer area de pesquisa -->
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="candidatos.html">Candidatos</a></li>
-            <li><a id="signupButton" onclick="modal('signup', 'flex')">Cadastrar</a></li>
-            <li><a id="loginButton" onclick="modal('login', 'flex')">Acessar</a></li>
-        </ul>
-    </nav>
+    <?php include("menu.php") ?>
     <section class="maxWidth contentEstado">
         <article class="sobre">
             <div>
                 <img class="bandeiraEstado" src="img/bandeira_alagoas.jpg">
-                <h1>Estado de Alagoas</h1>
+                <h1>Estado de <?php  $sql = "SELECT * FROM estado WHERE nome = $estado"; echo $estado ?></h1>
                 <table>
                     <tr>
                         <td>
@@ -70,42 +63,6 @@
             </ul>
         </nav>
     </section>
-
-    <!-- modal login e signup -->
-
-    <section id="login" class="modal">
-        <div id="box" class="box">
-            <span id="closeModal" onclick="modal('login', 'none')">X</span>
-            <h1>Acesse sua conta</h1>
-            <form class="loginForm" action="">
-                <input type="text" placeholder="Usuario" name="username" required/>
-                <input type="password" placeholder="Senha" name="password" required />
-                <button type="submit">Entrar</button>
-                <div><span>Novo? <a class="signup" onclick="">Cadastre-se</a></span><a class="forgot" href="#">Esqueci a senha!</a></div>
-            </form>
-        </div>
-    </section>
-
-    <section id="signup" class="modal">
-        <div id="box" class="box">
-            <span id="closeModal" onclick="modal('signup', 'none')">X</span>
-            <h1>Cadastrar nova conta</h1>
-            <form class="loginForm" action="">
-                <input type="email" placeholder="E-mail" name="email" required/>
-                <input type="text" placeholder="Usuario" name="newUsername" required/>
-                <input type="password" placeholder="Senha" name="newPassword" required />
-                <input type="password" placeholder="Confirme sua senha" name="newPassword" required />
-                <button type="submit">Cadastrar</button>
-                <div><span>Já possui conta? <a class="signup" onclick="">Clique aqui!</a></span></div>
-            </form>
-        </div>
-    </section>
-
-    <script>
-        function modal(id, info) {
-            document.getElementById(id).style.display = info;
-        }
-    </script>
 
 </body>
 

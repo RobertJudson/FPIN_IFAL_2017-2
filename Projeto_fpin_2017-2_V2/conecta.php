@@ -7,14 +7,4 @@
         exit;
     }
 
-    // $resultado = $conn->query("SELECT * FROM usuario ORDER BY idUsuario");
-
-    // $data = array();
-
-    // while ($row = $resultado->fetch_assoc()){
-    //     array_push($data, $row);
-    // }
-
-    // echo json_encode($data);
-
 ?>
